@@ -16,7 +16,7 @@ get_ipython().run_line_magic('pip', 'install folium')
 # if you can't import folium package, try this in a individual cell (%pip install folium)
 import pandas as pd
 #read
-data = pd.read_csv('C:/Users/Valeria/Desktop/Volcanoes.txt')
+data = pd.read_csv('C:/Volcanoes.txt')
 #creo lista 
 lat = list(data["LAT"])
 lon = list(data["LON"])
@@ -57,8 +57,6 @@ map.add_child(folium.LayerControl())
 
 map.save("MainMap.html")
 
-
-# In[ ]:
 
 
 
